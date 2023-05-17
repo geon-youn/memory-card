@@ -1,0 +1,55 @@
+html, body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card {
+    /* outline: 1px solid black; */
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+.clicked {
+    /* outline: 1px solid red; */
+}
+
+.card:hover {
+    background-color: whitesmoke;
+}
+
+.card:active {
+    outline: 1px solid gainsboro;
+}
+
+.card > .name {
+    color: gray;
+    font-weight: bold;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(200px, 1fr));
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
